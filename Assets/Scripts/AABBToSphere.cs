@@ -37,7 +37,7 @@ public class AABBToSphere : MonoBehaviour
             (z - B.transform.position.z) * (z - B.transform.position.z)
            );
 
-        if (distance < (B.transform.localScale.x / 2))
+        if (distance <= (B.transform.localScale.x / 2))
         {
             A.gameObject.GetComponent<Renderer>().material.color = Color.red;
         }
